@@ -1,0 +1,96 @@
+html,body{
+    overflow-x:hidden;
+   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.clipping{
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 88%);
+}
+
+.poster-bg{
+    background-image:url("https://preview.colorlib.com/theme/gymlife/img/banner-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.target{
+    color:white;
+}
+.planCard:hover ~ .target {
+        color: black;
+  }
+
+
+.photoGallery{
+    width: 100vw;
+    height: 120vh;
+    display: grid;
+    background-color: #151515;
+    /* row-gap:1px; */
+    /* column-gap:5px; */
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* #img1{
+    grid-row:1/2;
+    grid-column: 1/3;
+    background-color: red;
+    width:100%;
+    height: 100%;
+}
+#img2{
+    grid-row:1/2;
+    grid-column: 3/4;
+    background-color: blue;
+    width:100%;
+    height: 100%;
+}
+#img3{
+    grid-row:1/2;
+    grid-column: 4/5;
+    background-color: red;
+    width:100%;
+    height: 100%;
+}
+#img4{
+    grid-row:2/3;
+    grid-column: 1/2;
+    background-color: blue;
+    width:100%;
+    height: 100%;
+}
+#img5{
+    grid-row:2/3;
+    grid-column: 2/3;
+    background-color: red;
+    width:100%;
+    height: 100%;
+}
+#img6{
+    grid-row:2/3;
+    grid-column: 3/5;
+    background-color: red;
+    width:100%;
+    height: 100%;
+    
+} */
+
+
+.bgPattern{
+    background: radial-gradient(circle, transparent 25%, #151515  26%),linear-gradient(45deg, transparent 46%, #f05f0c 47%, #f05f0c 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #f05f0c 47%, #f05f0c 52%, transparent 53%);
+    background-size: 3em 3em;
+    background-color: #151515;
+    opacity: 1
+}
+
+.bg1{
+    background-image: url("https://preview.colorlib.com/theme/gymlife/img/hero/hero-2.jpg");
+    /* scale:; */
+    background-position: center;
+}
