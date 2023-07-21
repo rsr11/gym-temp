@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import Activity from './components/Activity'
 import ContactPage from './components/ContactPage'
@@ -11,11 +12,12 @@ import Plans from './components/Plans'
 import Poster from './components/Poster'
 
 function App() {
-  
+
+  const [isMenuOpen , setMenuOpen] = useState(false);
 
   return (
-    <section>
-     <Header/>
+    <section className={`${isMenuOpen ? " overflow-hidden" :"overflow-auto"}`} >
+     <Header isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen} />
      <HeroSection/>
      <Feature/>
      <Activity/>

@@ -93,4 +93,6 @@ html{
     background-image: url("https://preview.colorlib.com/theme/gymlife/img/hero/hero-2.jpg");
     /* scale:; */
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
