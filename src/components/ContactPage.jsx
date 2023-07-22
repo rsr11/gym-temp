@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ContactPage = () => (
-    <section className='pt-40 bg-black pb-10' id='contact' >
+    <section className='pt-40 w-[100vw] bg-black pb-10' id='contact' >
         <h1 className='text-5xl text-center text-white font-bold mb-16'>
             <span className=' after:content-[""] relative after:w-16 after:h-2 after:-bottom-5 after:left-12 after:rounded-md after:absolute after:bg-[#f36100] '>Contact</span>
         </h1>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {AnimatePresence, motion} from "framer-motion";
+import {motion} from "framer-motion";
 
 const Header = ({isMenuOpen , setMenuOpen}) => {
   return  <section>
@@ -36,8 +36,7 @@ const Header = ({isMenuOpen , setMenuOpen}) => {
         <li className='hover:text-[#f36100] ' >OUR TEAM</li>
         <li className='hover:text-[#f36100] ' ><a href="#contact">CONTACT US</a></li>
       </ul>
-      {/* <img src="https://preview.colorlib.com/theme/gymlife/img/hero/hero-2.jpg" alt="" /> */}
-    </section>
+      </section>
   
 
 </section>

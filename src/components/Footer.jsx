@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <section className='bg-black' >
+    <section className='bg-black w-[100vw]' >
     <section className='bg-black  flex justify-between flex-col lg:flex-row overflow-x-hidden text-white py-10' >
       <div className='w-60 pl-20 pb-8 lg:pb-0' >
       <h1 className='text-4xl font-bold text-center'>Gym<span className='text-[#f36100]' >B</span>ro</h1>

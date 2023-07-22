@@ -1,22 +1,25 @@
-import { useState } from 'react'
+import { useState, lazy , Suspense } from 'react'
 import './App.css'
-import Activity from './components/Activity'
-import ContactPage from './components/ContactPage'
-import Feature from './components/Feature'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import HeroSection from './components/HeroSection'
-import LocationSection from './components/LocationSection'
-import PhotoGallery from './components/PhotoGallery'
-import Plans from './components/Plans'
-import Poster from './components/Poster'
+
+const Activity = lazy(()=>import('./components/Activity'));  
+const ContactPage = lazy(()=>import('./components/ContactPage'));  
+const Feature = lazy(()=>import('./components/Feature'));  
+const Footer = lazy(()=>import('./components/Footer'));  
+const HeroSection = lazy(()=>import('./components/HeroSection'));  
+const LocationSection = lazy(()=>import('./components/LocationSection'));  
+const PhotoGallery = lazy(()=>import('./components/PhotoGallery'));  
+const Plans = lazy(()=>import('./components/Plans'));  
+const Poster = lazy(()=>import('./components/Poster'));  
+
+const Header = lazy(()=>import('./components/Header'));
 
 function App() {
 
   const [isMenuOpen , setMenuOpen] = useState(false);
 
   return (
-    <section className={`${isMenuOpen ? " overflow-hidden" :"overflow-auto"}`} >
+    <Suspense fallback={<h1>Loading..</h1>} >
+    <section className={`${isMenuOpen ? " h-[100vh] overflow-hidden" :" h-fit overflow-x-hidden"}`} >
      <Header isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen} />
      <HeroSection/>
      <Feature/>
@@ -28,6 +31,7 @@ function App() {
      <LocationSection/>
      <Footer/>
     </section>
+    </Suspense>
   )
 }
 
