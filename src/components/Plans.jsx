@@ -25,7 +25,7 @@ const PlanCard = ()=>{
 }
 const Plans = () => {
   return (
-    <section id='plan' className='w-[100vw] overflow-x-hidden pb-20 bg-[#151515]' >
+    <section id='plan' className='w-[100vw] overflow-x-hidden pb-10 lg:pb-20 bg-[#151515]' >
         <p className='text-center text-[#f36100] pt-20 font-semibold' >OUR PLANS</p> 
      <h1 className='text-center text-white text-3xl font-bold mt-3' >CHOOSE YOUR PRICING PLAN</h1>
       <section className='flex justify-center items-center lg:flex-row flex-col gap-10 mt-14' >
